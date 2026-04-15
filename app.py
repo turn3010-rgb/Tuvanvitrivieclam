@@ -967,20 +967,6 @@ if privacy_agreed:
         dream_job_input = st.selectbox("Chọn định hướng nghề nghiệp:", options=dream_job_options)
         st.session_state.dream_job = dream_job_input if dream_job_input != "(Chưa xác định)" else "Chưa có định hướng rõ ràng"
     
-    # ── DEMO MODE: Bỏ qua OCR khi API bị rate-limit ──
-    st.markdown("**Hoặc dùng dữ liệu mẫu để kiểm tra dashboard:**")
-    if st.button("🎭 Dùng Dữ liệu Demo (Bỏ qua OCR)"):
-        st.session_state.ocr_scores = {
-            "C1": {"score": 8.5, "subjects": ["Lập trình C++: 8.5", "Cấu trúc dữ liệu: 8.5"]},
-            "C2": {"score": 9.0, "subjects": ["Toán rời rạc: 9.0", "Máy học: 9.0"]},
-            "C3": {"score": 6.0, "subjects": ["Mạng máy tính: 6.0"]},
-            "C4": {"score": 7.0, "subjects": ["Quản lý dự án: 7.0"]},
-            "C5": {"score": 5.0, "subjects": ["Triết học: 5.0"]}
-        }
-        st.session_state.demo_mode = True
-        st.success("✅ Đã nạp dữ liệu demo! Kéo xuống để tiếp tục.")
-        st.rerun()
-    st.divider()
 
     uploaded_file = st.file_uploader("Tải lên ảnh bảng điểm (.PNG, .JPG, .PDF) để hệ thống số hóa:", type=["png", "jpg", "jpeg", "pdf"])
     
