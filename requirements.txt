@@ -1,0 +1,30 @@
+# DSS - IT Career Advisor
+# Python >= 3.10
+# Install: pip install -r requirements.txt
+
+# --- Core App ---
+streamlit>=1.32.0
+
+# --- Google Gemini AI SDK ---
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+
+# --- Data Processing ---
+pandas>=2.0.0
+numpy>=1.26.0
+openpyxl>=3.1.0
+
+# --- Visualization ---
+plotly>=5.18.0
+
+# --- Image & File Handling ---
+Pillow>=10.0.0
+PyPDF2>=3.0.0
+
+# --- PDF Export ---
+fpdf2>=2.7.0
+markdown>=3.5.0
+beautifulsoup4>=4.12.0
+
+# --- PDF Chart Rendering ---
+kaleido>=0.2.1
